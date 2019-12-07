@@ -1,5 +1,7 @@
 @import "../abstracts/abstracts.scss";
 
+/*Banner*/
+
 .banner {
   min-height: 50vh;
   background: linear-gradient($color-primary1-transparent, $color-primary2-transparent), url("../images/thumbnail_top_img.png") no-repeat;
