@@ -60,7 +60,7 @@
           color: $color-grey2;
           margin: 0 2rem;
           align-self: center;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
           @include responsive("phone") {
             margin-bottom: 0;
             flex: 1 1 15%;
@@ -76,6 +76,16 @@
           color: $color-grey3;
         }
 
+        & a:link:first-of-type {
+          @include responsive("phone") {
+            flex-basis: 5%;
+          }
+
+          @include responsive("tablet") {
+            flex-basis: initial;
+          }
+        }
+
         & a:link:last-of-type {
           margin-bottom: 2rem;
           @include responsive("phone") {
@@ -89,17 +99,19 @@
 
         & > span {
           flex: 1;
+          display: flex;
 
           @include responsive("phone") {
             flex-basis: 100%;
+            margin-top: 2rem;
           }
 
           @include responsive("tablet") {
             flex-basis: initial;
+            margin-top: 0;
           }
           & > input {
             min-height: 5rem;
-            width: 80%;
           }
 
           & > i {

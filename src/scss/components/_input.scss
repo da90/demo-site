@@ -6,6 +6,7 @@ input {
     background-color: $color-grey6;
     padding: 0 1rem;
     transition: border-color .2s ease-in-out;
+    flex: 1;
 
     &:focus {
         border: .1rem solid $color-primary2;
