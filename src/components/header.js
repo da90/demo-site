@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
+  /*<header
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
@@ -28,6 +28,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+  </header>*/
+
+  <header>
+    <p>Our header</p>
   </header>
 )
 
