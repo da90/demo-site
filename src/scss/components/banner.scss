@@ -2,11 +2,32 @@
 
 .banner {
   min-height: 50vh;
-  background: url("../images/thumbnail_top_img.png") no-repeat;
+  background: linear-gradient($color-primary1-transparent, $color-primary2-transparent), url("../images/thumbnail_top_img.png") no-repeat;
   background-size: cover;
   background-origin: top left;
 
   @include responsive("phone") {
-      min-height: 100vh
+      min-height: 100vh;
+      padding: 2rem;
+  }
+
+  & > nav {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 114rem;
+      
+      & > div {
+        &:first-of-type {
+            display: inline;
+            text-align: right;
+            padding: 1rem;
+        }
+
+        &:last-of-type {
+            background-color: #fff;
+            padding: 4rem 2rem;
+        }
+      }
   }
 }
