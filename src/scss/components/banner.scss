@@ -20,15 +20,58 @@
       max-width: 114rem;
       
       & > div {
+        font-family: Open-Sans, sans-serif;
         &:first-of-type {
+
             display: inline;
             text-align: right;
             padding: 1rem;
+            font-weight: 700;
+            font-size: 1.3rem;
+
+            & a:link, a:visited {
+              color: white;
+            }
         }
 
         &:last-of-type {
             background-color: #fff;
-            padding: 4rem 2rem;
+            padding: 2rem;
+            letter-spacing: .15rem;
+            font-weight: 600;
+            display: flex;
+
+            & a:link, a:visited {
+              color: $color-grey2;
+              margin: 0 2rem;
+              height: 2rem;
+              align-self: center;
+            }
+
+            & a:link:last-of-type {
+              margin-right: 15rem;
+            }
+
+            & > span {
+              flex: 1;
+              & > input {
+                min-height: 5rem;
+                width: 80%;
+              }
+
+              & > i {
+                background-color: $color-grey4;
+                color: $color-grey1;
+                padding: 1.6rem;
+                font-size: 1.8rem;
+              }
+            }
+        }
+
+        & a:link {
+          text-decoration: none;
+          margin: 0 .5rem;
+          text-transform: uppercase;
         }
       }
   }
