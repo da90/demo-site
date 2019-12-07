@@ -3,81 +3,120 @@
 /*Banner*/
 
 .banner {
-  min-height: 50vh;
-  background: linear-gradient($color-primary1-transparent, $color-primary2-transparent), url("../images/thumbnail_top_img.png") no-repeat;
+  min-height: 75vh;
+  background: linear-gradient(
+      $color-primary1-transparent,
+      $color-primary2-transparent
+    ),
+    url("../images/thumbnail_top_img.png") no-repeat;
   background-size: cover;
   background-origin: top left;
 
   @include responsive("phone") {
-      min-height: 100vh;
-      padding: 2rem;
+    min-height: 100vh;
+    padding: 2rem;
   }
 
   & > nav {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      max-width: 114rem;
-      
-      & > div {
-        font-family: Open-Sans, sans-serif;
-        &:first-of-type {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 114rem;
 
-            display: inline;
-            text-align: right;
-            padding: 1rem;
-            font-weight: 700;
-            font-size: 1.3rem;
+    & > div {
+      font-family: Open-Sans, sans-serif;
+      &:first-of-type {
+        display: inline;
+        text-align: right;
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1.3rem;
 
-            & a:link, a:visited {
-              color: white;
-            }
-        }
-
-        &:last-of-type {
-            background-color: #fff;
-            padding: 2rem;
-            letter-spacing: .15rem;
-            font-weight: 600;
-            display: flex;
-
-            & a:link, a:visited {
-              color: $color-grey2;
-              margin: 0 2rem;
-              height: 2rem;
-              align-self: center;
-            }
-
-            & a:hover {
-              color: $color-grey3;
-            }
-
-            & a:link:last-of-type {
-              margin-right: 10%;
-            }
-
-            & > span {
-              flex: 1;
-              & > input {
-                min-height: 5rem;
-                width: 80%;
-              }
-
-              & > i {
-                background-color: $color-grey5;
-                color: $color-grey1;
-                padding: 1.6rem;
-                font-size: 1.8rem;
-              }
-            }
-        }
-
-        & a:link {
-          text-decoration: none;
-          margin: 0 .5rem;
-          text-transform: uppercase;
-          transition: color .2s ease-in-out;
+        & a:link,
+        a:visited {
+          color: white;
         }
       }
+
+      &:last-of-type {
+        background-color: #fff;
+        padding: 2rem;
+        letter-spacing: 0.15rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+
+        @include responsive("phone") {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        @include responsive("tablet") {
+          flex-wrap: nowrap;
+        }
+
+        & a:link,
+        a:visited {
+          color: $color-grey2;
+          margin: 0 2rem;
+          align-self: center;
+          margin-bottom: .5rem;
+          @include responsive("phone") {
+            margin-bottom: 0;
+            flex: 1 1 15%;
+          }
+
+          @include responsive("tablet") {
+            height: 2rem;
+            flex: initial;
+          }
+        }
+
+        & a:hover {
+          color: $color-grey3;
+        }
+
+        & a:link:last-of-type {
+          margin-bottom: 2rem;
+          @include responsive("phone") {
+            margin-bottom: 0;
+          }
+
+          @include responsive("tablet") {
+            margin-right: 10%;
+          }
+        }
+
+        & > span {
+          flex: 1;
+
+          @include responsive("phone") {
+            flex-basis: 100%;
+          }
+
+          @include responsive("tablet") {
+            flex-basis: initial;
+          }
+          & > input {
+            min-height: 5rem;
+            width: 80%;
+          }
+
+          & > i {
+            background-color: $color-grey5;
+            color: $color-grey1;
+            padding: 1.6rem;
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      & a:link {
+        text-decoration: none;
+        margin: 0 0.5rem;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+      }
+    }
   }
 }
