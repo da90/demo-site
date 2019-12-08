@@ -1,12 +1,22 @@
 @import "../abstracts/abstracts";
 
-button, .button {
-    text-decoration: none;
-    padding: 2rem;
-    text-align: center;
-    color: white;
+button,
+.button {
+  display: block;
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-family: Open-Sans, sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 40rem;
 
-    &:visited {
-        color: white;
-    }
+  &:visited {
+    color: white;
+  }
+
+  &--primary {
+    background-color: $color-primary6;
+  }
 }
