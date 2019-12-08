@@ -15,13 +15,23 @@ footer {
         }
 
         & > div {
-            flex: 1 1 33%;
+            flex: 1 1 100%;
             text-align: center;
             align-self: center;
 
             &:first-of-type {
-                flex-basis: 15%;
+                flex-basis: 25%;
                 width: 100%;
+                min-width: 18rem;
+                max-width: 25rem;
+            }
+
+            &:last-of-type {
+                flex-basis: 65%;
+                @include responsive("tablet") {
+                    flex-basis: 35%;
+                }
+
             }
 
             & > p {
@@ -31,6 +41,12 @@ footer {
 
                 @include responsive("phone") {
                     margin: 0;
+                }
+            }
+
+            & .mininav {
+                & a {
+                    color: white !important;
                 }
             }
         }

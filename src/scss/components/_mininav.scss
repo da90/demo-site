@@ -1,0 +1,45 @@
+@import "../abstracts/abstracts";
+
+.mininav {
+  font-family: Open-Sans, sans-serif;
+  display: inline;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  @include responsive("phone") {
+    text-align: right;
+  }
+
+  & a:link,
+  a:visited {
+    color: $color-primary2;
+    text-decoration: none;
+
+    &:after {
+      content: "|";
+      color: $color-primary1;
+      padding-left: 1rem;
+    }
+
+    &:last-of-type {
+      &:after {
+        content: "";
+      }
+    }
+  }
+
+  & a:link {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+  }
+
+  & a {
+    &:hover {
+      color: $color-grey1 !important;
+    }
+  }
+}

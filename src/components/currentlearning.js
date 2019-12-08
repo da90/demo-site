@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import Progress from "../components/progress"
+import MiniNav from "../components/mininav"
 
 const CurrentLearning = () => <section class="currentlearning">
+    <MiniNav opt1="Top level" opt2="Second Level" opt3="Current Level" />
     <h1>Current Learning</h1>
 
     <section class="currentlearning__list">

@@ -23,26 +23,10 @@
 
     & > div {
       font-family: Open-Sans, sans-serif;
-      &:first-of-type {
-        display: inline;
-        text-align: center;
-        padding: 1rem;
-        font-weight: 700;
-        font-size: 1.3rem;
 
-        @include responsive("phone") {
-          text-align: right;
-        }
-
-        & a:link,
-        a:visited {
+      &.mininav {
+        & a:visited {
           color: white;
-
-          &:after {
-            content: "|";
-            color: $color-primary1;
-            padding-left: 1rem;
-          }
         }
       }
 

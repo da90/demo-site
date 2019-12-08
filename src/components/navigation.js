@@ -1,22 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import MiniNav from "../components/mininav"
 
 const Navigation = () => <nav>
-    <div>
-        <Link to="/account">Hello, Phil!</Link>
-        <Link to="/contact-us#help">Help</Link>
-        <Link to="/contact-us">Contact Us</Link>
-    </div>
-
+    <MiniNav opt1="Hello, Phil!" opt2="Help" opt3="Contact Us" />
     <div>
         <Link to="/">Home</Link>
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/record-of-learning">Record of Learning</Link>
         <Link to="/record-of-learning">Meet the team</Link>
         <span class="input__group">
-                <input type="text" placeholder="Search for courses" />
-                <i class="fas fa-search" title="Search"></i>
-            </span>
+            <input type="text" placeholder="Search for courses" />
+            <i class="fas fa-search" title="Search"></i>
+        </span>
     </div>
 </nav>
 
