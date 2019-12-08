@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import External from "../components/external"
 import Image from "../components/image"
 import CurrentLearning from "../components/currentlearning"
+import HeroSection from "../components/herosection"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <External/>
     <Banner/>
     <CurrentLearning/>
+    <HeroSection/>
   </Layout>
 )
 
