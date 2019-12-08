@@ -37,7 +37,11 @@
         }
 
         & > a {
-            margin-top: 2rem;
+            margin: 2rem auto 0 auto;
+
+            @include responsive("phone") {
+                margin: 2rem 0 0 0;
+            }
         }
     }
 }
