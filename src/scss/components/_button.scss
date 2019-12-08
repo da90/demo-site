@@ -11,18 +11,23 @@ button,
   font-size: 2rem;
   width: 100%;
   max-width: 40rem;
+  transition: background-color .2s ease-in-out;
 
   &:visited {
     color: white;
   }
 
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary5; 
+}
+
   &--primary {
     background-color: $color-primary6;
-    transition: background-color .2s ease-in-out;
+  }
 
-    &:hover {
-        cursor: pointer;
-        background-color: $color-primary5; 
-    }
+  &--secondary {
+    background-color: $color-primary1;
+    border-radius: .5rem;
   }
 }

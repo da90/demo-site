@@ -1,0 +1,43 @@
+@import "../abstracts/abstracts";
+
+.currentlearning {
+    margin-top: 4rem;
+    & > h1 {
+        color: $color-primary2
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            & > div {
+                padding: 1rem;
+                flex: 1 1 25%;
+
+                &:first-of-type {
+                    flex-basis: 50%;
+                }
+
+                &:nth-child(2) {
+                    flex-basis: 10%;
+                }
+
+                &:nth-child(3) {
+                    & > div {
+                        margin-top: 2.5rem;
+                    }
+                }
+
+                & > p:first-of-type {
+                    color: $color-primary2;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
