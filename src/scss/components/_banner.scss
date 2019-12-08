@@ -25,6 +25,10 @@
       font-family: Open-Sans, sans-serif;
 
       &.mininav {
+        & a:link {
+          color: white !important;
+        }
+
         & a:visited {
           color: white;
         }

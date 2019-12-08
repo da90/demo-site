@@ -4,8 +4,8 @@ import Badges from "../components/badges"
 
 const Card = (props) => <section className="card">
     <Image alt="Terry Morgan's Face" filename="thumbnail_profile_pic.png" />
-    <i class="far fa-envelope" title="E-mail Terry"></i>
-    <i class="fas fa-cogs" title="More..."></i>
+    <i className="far fa-envelope" title="E-mail Terry"></i>
+    <i className="fas fa-cogs" title="More..."></i>
     <div>
         <h3>Terry Morgan</h3>
         <a href="mailto:terry.morgan@centizu.com">terry.morgan@centizu.com</a>

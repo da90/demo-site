@@ -9,9 +9,9 @@ const Navigation = () => <nav>
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/record-of-learning">Record of Learning</Link>
         <Link to="/record-of-learning">Meet the team</Link>
-        <span class="input__group">
+        <span className="input__group">
             <input type="text" placeholder="Search for courses" />
-            <i class="fas fa-search" title="Search"></i>
+            <i className="fas fa-search" title="Search"></i>
         </span>
     </div>
 </nav>

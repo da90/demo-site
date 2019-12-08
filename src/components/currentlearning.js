@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 import Progress from "../components/progress"
 import MiniNav from "../components/mininav"
 
-const CurrentLearning = () => <section class="currentlearning">
+const CurrentLearning = () => <section className="currentlearning">
     <MiniNav opt1="Top level" opt2="Second Level" opt3="Current Level" />
     <h1>Current Learning</h1>
 
-    <section class="currentlearning__list">
-        <div class="currentlearning__list-item">
+    <section className="currentlearning__list">
+        <div className="currentlearning__list-item">
             <div>
                 <p>Name</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -33,7 +33,7 @@ const CurrentLearning = () => <section class="currentlearning">
             </div>
         </div>
 
-        <div class="currentlearning__list-item">
+        <div className="currentlearning__list-item">
             <div>
                 <p>Name</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -58,7 +58,7 @@ const CurrentLearning = () => <section class="currentlearning">
             </div>
         </div>
 
-        <div class="currentlearning__list-item">
+        <div className="currentlearning__list-item">
             <div>
                 <p>Name</p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -83,7 +83,7 @@ const CurrentLearning = () => <section class="currentlearning">
             </div>
         </div>
 
-        <div class="currentlearning__list-item">
+        <div className="currentlearning__list-item">
             <div>
                 <p>Name</p>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
