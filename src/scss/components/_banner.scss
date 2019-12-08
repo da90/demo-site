@@ -27,14 +27,24 @@
       font-family: Open-Sans, sans-serif;
       &:first-of-type {
         display: inline;
-        text-align: right;
+        text-align: center;
         padding: 1rem;
         font-weight: 700;
         font-size: 1.3rem;
 
+        @include responsive("phone") {
+          text-align: right;
+        }
+
         & a:link,
         a:visited {
           color: white;
+
+          &:after {
+            content: "|";
+            color: $color-primary1;
+            padding-left: 1rem;
+          }
         }
       }
 
@@ -119,6 +129,12 @@
             color: $color-grey1;
             padding: 1.6rem;
             font-size: 1.8rem;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $color-grey4;
+            }
           }
         }
       }
