@@ -12,8 +12,22 @@ const InfoSection = () => <div className="infosection__wrapper">
                 <i class="fas fa-search" title="Search"></i>
             </span>
         </div>
-        <div>More Links</div>
-        <div>Social Media</div>
+        <div><h4>More Links</h4>
+        <ul>
+            <li><Link to="#">Terms of Service</Link></li>
+            <li><Link to="#">Become an Expert</Link></li>
+            <li><Link to="#">How it Works</Link></li>
+            <li><Link to="#">Meet the Teem</Link></li>
+        </ul>
+        </div>
+        <div><h4>Social Media</h4>
+        <ul>
+            <li><Link to="#"><i class="fab fa-twitter"></i>Twitter</Link></li>
+            <li><Link to="#"><i class="fab fa-facebook-f"></i>Facebook</Link></li>
+            <li><Link to="#"><i class="fab fa-google-plus-g"></i>Google+</Link></li>
+            <li><Link to="#"><i class="fab fa-linkedin-in"></i>LinkedIn</Link></li>
+        </ul>
+        </div>
     </section>
 </div>
 

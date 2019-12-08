@@ -1,42 +1,73 @@
 @import "../abstracts/abstracts";
 
 .infosection {
-    display: flex;
-    flex-direction: column;
-    max-width: 114rem;
-    margin: 0 auto;
-    
-    @include responsive("phone") {
-        flex-direction: row;
-        padding: 6rem 0;
-    }
+  display: flex;
+  flex-direction: column;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 
-    & > div {
-        flex: 1;
-        &:nth-child(1) {
-            flex-basis: 25%;
+  @include responsive("phone") {
+    flex-direction: row;
+    padding: 6rem 0;
+  }
 
-            & span {
-                margin-top: 2rem;
-            }
+  & > div {
+    flex: 1;
 
-            & i.fa-search {
-                background-color: $color-grey3;
-                color: white;
+    & > ul {
+      list-style: none;
 
-                &:hover {
-                    background-color: $color-grey2;
-                }
-            }
+      @include responsive("phone") {
+        margin-left: 2rem;
+      }
+
+      & i {
+        margin-right: 2rem;
+        max-width: 1rem;
+        color: $color-primary2;
+      }
+
+      & a {
+        color: $color-grey1;
+        text-decoration: none;
+
+        &:visited {
+          color: $color-grey1;
         }
+      }
+    }
 
-        & > h4 {
-            color: $color-primary2;
-            text-transform: initial;
+    &:nth-child(1) {
+      flex-basis: 25%;
+      margin-right: 3rem;
+
+      & span {
+        margin: 2rem 0;
+      }
+
+      & i.fa-search {
+        background-color: $color-grey3;
+        color: white;
+
+        &:hover {
+          background-color: $color-grey2;
         }
+      }
     }
 
-    &__wrapper {
-        background-color: $color-grey5;
+    & > h4 {
+      color: $color-primary2;
+      text-transform: initial;
+      text-align: center;
+
+      @include responsive("phone") {
+        text-align: left;
+      }
     }
+  }
+
+  &__wrapper {
+    background-color: $color-grey5;
+  }
 }
