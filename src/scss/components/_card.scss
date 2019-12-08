@@ -45,7 +45,13 @@
   & > div {
     &:last-of-type {
       margin-top: 3rem;
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
+      text-align: center;
+
+      @include responsive("phone") {
+        padding: 1rem 3rem;
+        text-align: left;
+      }
 
       & h3 {
         color: $color-primary2;

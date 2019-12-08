@@ -3,7 +3,8 @@
 .currentlearning {
     margin-top: 4rem;
     & > h1 {
-        color: $color-primary2
+        color: $color-primary2;
+        text-align: center;
     }
 
     &__list {
@@ -12,8 +13,21 @@
 
         &-item {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-evenly;
+            border-bottom: .2rem solid $color-grey4;
+
+            @include responsive("phone") {
+                flex-direction: row;
+            }
+
+            &:first-of-type {
+                border-top: .2rem solid $color-grey4;
+            }
+
+            &:nth-child(2n+2) {
+                background-color: $color-grey5;
+            }
 
             & > div {
                 padding: 1rem;
@@ -29,7 +43,16 @@
 
                 &:nth-child(3) {
                     & > div {
-                        margin-top: 2.5rem;
+                        @include responsive("phone") {
+                            margin-top: 2.75rem;
+                        }
+
+                    }
+                }
+
+                &:last-of-type {
+                    & > a {
+                        margin: 0 auto;
                     }
                 }
 

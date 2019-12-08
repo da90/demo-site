@@ -15,5 +15,6 @@
         height: 100%;
         background-color: $color-primary1;
         border-radius: .5rem;
+        transition: width .2s ease-in-out;
     }
 }
