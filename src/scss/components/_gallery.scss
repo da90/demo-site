@@ -1,0 +1,72 @@
+@import "../abstracts/abstracts";
+
+.gallery {
+  max-width: 100%;
+  padding: 6rem 0;
+  background-color: $color-grey5;
+  display: flex;
+  flex-direction: column;
+
+  @include responsive("phone") {
+    flex-direction: row;
+  }
+
+  &__card {
+    margin-bottom: 2rem;
+    position: relative;
+    flex: 1 1 auto;
+
+    @include responsive("phone") {
+      min-width: 40rem;
+      margin: 0 2rem;
+      transform: translateX(-12rem);
+    }
+
+    & > .gatsby-image-wrapper {
+        max-height: 20rem;
+    }
+
+    & > span {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: white;
+      padding: 0.2rem 1rem;
+      color: $color-primary1;
+    }
+
+    & > div {
+      padding: 2rem;
+      background-color: $color-primary2;
+
+      & h5 {
+        color: $color-primary1;
+      }
+
+      & p {
+        color: white;
+      }
+
+      & a {
+        max-width: 15rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        margin-top:2rem;
+        transition: opacity .2s ease-in-out;
+
+        @include responsive("tablet") {
+            opacity:0;
+        }
+      }
+    }
+
+    &:hover {
+        & > div {
+            a {
+                opacity:1;
+            }
+        }
+    }
+  }
+}

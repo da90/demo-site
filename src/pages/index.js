@@ -8,6 +8,7 @@ import External from "../components/external"
 import Image from "../components/image"
 import CurrentLearning from "../components/currentlearning"
 import HeroSection from "../components/herosection"
+import Gallery from "../components/gallery"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Banner/>
     <CurrentLearning/>
     <HeroSection/>
+    <Gallery/>
   </Layout>
 )
 
