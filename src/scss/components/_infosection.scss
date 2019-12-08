@@ -17,6 +17,7 @@
 
     & > ul {
       list-style: none;
+      margin-left: 1rem;
 
       @include responsive("phone") {
         margin-left: 2rem;
