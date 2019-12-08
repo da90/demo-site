@@ -1,0 +1,38 @@
+@import "../abstracts/abstracts";
+
+footer {
+    background-color: $color-primary1;
+
+    & > div {
+        max-width: 114rem;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @include responsive("phone") {
+            flex-direction: row;
+        }
+
+        & > div {
+            flex: 1 1 33%;
+            text-align: center;
+            align-self: center;
+
+            &:first-of-type {
+                flex-basis: 15%;
+                width: 100%;
+            }
+
+            & > p {
+                font-size: 1.4rem;
+                color: white;
+                margin: 1rem 0;
+
+                @include responsive("phone") {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

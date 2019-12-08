@@ -11,6 +11,7 @@ import HeroSection from "../components/herosection"
 import Gallery from "../components/gallery"
 import ContactForm from "../components/contactform"
 import InfoSection from "../components/infosection"
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <Gallery />
     <ContactForm />
     <InfoSection />
+    <Footer />
   </Layout>
 )
 
