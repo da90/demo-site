@@ -23,7 +23,7 @@
     }
 
     & > .gatsby-image-wrapper {
-        max-height: 20rem;
+      max-height: 20rem;
     }
 
     & > span {
@@ -52,21 +52,25 @@
         padding: 1rem;
         font-size: 1.6rem;
         font-weight: bolder;
-        margin-top:2rem;
-        transition: opacity .2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        margin: 2rem auto 0 auto;
+
+        @include responsive("phone") {
+            margin: initial;
+        }
 
         @include responsive("tablet") {
-            opacity:0;
+          opacity: 0;
         }
       }
     }
 
     &:hover {
-        & > div {
-            a {
-                opacity:1;
-            }
+      & > div {
+        a {
+          opacity: 1;
         }
+      }
     }
   }
 }
