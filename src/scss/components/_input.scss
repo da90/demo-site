@@ -7,6 +7,9 @@ input {
     padding: 0 1rem;
     transition: border-color .2s ease-in-out;
     flex: 1;
+    min-height: 5rem;
+    width: 100%;
+    border-radius: .5rem;
 
     &:focus {
         border: .1rem solid $color-primary2;

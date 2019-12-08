@@ -9,15 +9,17 @@ import Image from "../components/image"
 import CurrentLearning from "../components/currentlearning"
 import HeroSection from "../components/herosection"
 import Gallery from "../components/gallery"
+import ContactForm from "../components/contactform"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <External/>
-    <Banner/>
-    <CurrentLearning/>
-    <HeroSection/>
-    <Gallery/>
+    <External />
+    <Banner />
+    <CurrentLearning />
+    <HeroSection />
+    <Gallery />
+    <ContactForm />
   </Layout>
 )
 

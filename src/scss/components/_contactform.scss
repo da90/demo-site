@@ -1,0 +1,60 @@
+@import "../abstracts/abstracts";
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @include responsive("phone") {
+        flex-direction: row;
+    }
+
+    & > div {
+        flex: 1 1 auto;
+
+        &:first-of-type {
+            flex-basis: 45%;
+            height: 50rem;
+
+            & > .gatsby-image-wrapper {
+                height: 100% !important;
+            }
+        }
+
+        &:last-of-type {
+            margin-left: 4rem;
+            flex-basis: 55%;
+            align-self: center;
+
+            & > h1 {
+                color: $color-primary1;
+                text-align: center;
+                margin-top: 1rem;
+
+                @include responsive("phone") {
+                    flex-direction: left;
+                    margin-top: 0;
+                }
+            }
+
+            & > form {
+                display: flex;
+                flex-direction: column;
+                & > div {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 1rem 0;
+                    & > label {
+                        margin-right: 10rem;
+                        align-self: center;
+                        min-width: 10rem;
+                    }
+                }
+
+                & a {
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+}
