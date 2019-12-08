@@ -1,0 +1,20 @@
+@import "../abstracts/abstracts";
+
+header {
+  max-width: 114rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+
+  @include responsive("phone") {
+    flex-direction: row;
+  }
+
+  & > section {
+    flex: 1 1 auto;
+
+    &:first-of-type {
+        padding: 0 4rem;
+    }
+  }
+}
