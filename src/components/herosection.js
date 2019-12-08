@@ -7,7 +7,11 @@ const HeroSection = () => <section className="hero">
     <Image alt="Mobile phone image" filename="thumbnail_phone_mockup_screens.png"/>
     </div>
     <div>
-        <h1>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h1>
+        <h1>Sed ut perspiciatis unde omnis iste natus error.</h1>
+        <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+        <Link to="/meet-the-team" className="button button--primary" title="Find out more about us!">Find Out More</Link>
     </div>
 
 </section>

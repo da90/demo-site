@@ -3,7 +3,7 @@
 .currentlearning {
     margin-top: 4rem;
     & > h1 {
-        color: $color-primary2;
+        color: $color-primary1;
         text-align: center;
 
         @include responsive("phone") {
