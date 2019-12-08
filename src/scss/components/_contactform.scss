@@ -7,6 +7,7 @@
 
     @include responsive("phone") {
         flex-direction: row;
+        padding: 0 1rem;
     }
 
     & > div {
@@ -22,9 +23,14 @@
         }
 
         &:last-of-type {
-            margin-left: 4rem;
             flex-basis: 55%;
             align-self: center;
+            padding: 0 1rem;
+
+            @include responsive("phone") {
+                margin-left: 4rem;
+                padding: 0;
+            }
 
             & > h1 {
                 color: $color-primary1;
@@ -45,14 +51,18 @@
                     flex-direction: row;
                     margin: 1rem 0;
                     & > label {
-                        margin-right: 10rem;
+                        margin-right: 10%;
                         align-self: center;
                         min-width: 10rem;
                     }
                 }
 
                 & a {
-                    margin: 2rem 0;
+                    margin: 2rem auto;
+
+                    @include responsive ("phone") {
+                        margin: 2rem 0;                       
+                    }
                 }
             }
         }
