@@ -1,0 +1,36 @@
+@import "../abstracts/abstracts";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+
+  & > .gatsby-image-wrapper {
+    max-height: 30rem;
+  }
+
+  & > i {
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: $color-primary4;
+    padding: 2rem;
+    font-size: 3rem;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-primary5;
+    }
+  }
+
+  & > div {
+    &:last-of-type {
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+  }
+}

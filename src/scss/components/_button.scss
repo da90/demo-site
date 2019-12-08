@@ -1,0 +1,12 @@
+@import "../abstracts/abstracts";
+
+button, .button {
+    text-decoration: none;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+
+    &:visited {
+        color: white;
+    }
+}

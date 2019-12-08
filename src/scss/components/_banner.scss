@@ -3,7 +3,7 @@
 /*Banner*/
 
 .banner {
-  min-height: 75vh;
+  //min-height: 75vh;
   background: linear-gradient(
       $color-primary1-transparent,
       $color-primary2-transparent
@@ -13,7 +13,7 @@
   background-origin: top left;
 
   @include responsive("phone") {
-    min-height: 100vh;
+    //min-height: 100vh;
     padding: 2rem;
   }
 
