@@ -10,7 +10,7 @@
     max-height: 30rem;
   }
 
-  & > i {
+  & > i.fa-envelope {
     position: absolute;
     top: 30rem;
     left: 50%;
@@ -27,19 +27,37 @@
     }
   }
 
+  & > i.fa-cogs {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+  }
+
   & > div {
     &:last-of-type {
       margin-top: 3rem;
-      padding: 1rem;
+      padding: 1rem 3rem;
 
       & h3 {
         color: $color-primary2;
+
+        &:last-of-type {
+            margin-top: 1rem;
+        }
       }
 
       & > section {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-bottom: 1rem;
         & i {
           background-color: $color-primary4;
           color: white;
@@ -53,6 +71,10 @@
 
           &.badge--empty {
             background-color: $color-grey4; 
+
+            &:hover {
+                background-color: $color-grey4;         
+            }
           }
 
           &:hover {
