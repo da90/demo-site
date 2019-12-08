@@ -5,6 +5,10 @@
     & > h1 {
         color: $color-primary2;
         text-align: center;
+
+        @include responsive("phone") {
+            text-align: left;
+        }
     }
 
     &__list {
