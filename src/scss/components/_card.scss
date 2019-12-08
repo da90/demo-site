@@ -55,9 +55,26 @@
 
       & h3 {
         color: $color-primary2;
+        margin-bottom: 0;
 
         &:last-of-type {
             margin-top: 1rem;
+        }
+      }
+
+      & > a {
+        &:link {
+          color: $color-primary2;
+          text-decoration: none;
+          transition: color .2s ease-in-out;
+
+          &:visited {
+            color: $color-primary2;
+          }
+
+          &:hover {
+            color: $color-grey2;
+          }
         }
       }
 
