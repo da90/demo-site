@@ -19,18 +19,48 @@
     background-color: $color-primary4;
     padding: 2rem;
     font-size: 3rem;
-    transition: background-color .2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        cursor: pointer;
-        background-color: $color-primary5;
+      cursor: pointer;
+      background-color: $color-primary5;
     }
   }
 
   & > div {
     &:last-of-type {
-        margin-top: 4rem;
-        padding: 1rem;
+      margin-top: 3rem;
+      padding: 1rem;
+
+      & h3 {
+        color: $color-primary2;
+      }
+
+      & > section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        & i {
+          background-color: $color-primary4;
+          color: white;
+          padding: 2rem;
+          border-radius: 50%;
+          font-size: 2rem;
+          min-width: 6rem;
+          max-width: 6rem;
+          max-height: 6rem;
+          transition: background-color 0.2s ease-in-out;
+
+          &.badge--empty {
+            background-color: $color-grey4; 
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: $color-primary5;
+          }
+        }
+      }
     }
   }
 }
