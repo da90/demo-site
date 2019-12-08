@@ -15,7 +15,7 @@
 
         &:first-of-type {
             flex-basis: 45%;
-            height: 50rem;
+            height: 70rem;
 
             & > .gatsby-image-wrapper {
                 height: 100% !important;
@@ -38,8 +38,8 @@
                 margin-top: 1rem;
 
                 @include responsive("phone") {
-                    flex-direction: left;
                     margin-top: 0;
+                    text-align: left;
                 }
             }
 

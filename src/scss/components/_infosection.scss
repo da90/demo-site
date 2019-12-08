@@ -1,0 +1,42 @@
+@import "../abstracts/abstracts";
+
+.infosection {
+    display: flex;
+    flex-direction: column;
+    max-width: 114rem;
+    margin: 0 auto;
+    
+    @include responsive("phone") {
+        flex-direction: row;
+        padding: 6rem 0;
+    }
+
+    & > div {
+        flex: 1;
+        &:nth-child(1) {
+            flex-basis: 25%;
+
+            & span {
+                margin-top: 2rem;
+            }
+
+            & i.fa-search {
+                background-color: $color-grey3;
+                color: white;
+
+                &:hover {
+                    background-color: $color-grey2;
+                }
+            }
+        }
+
+        & > h4 {
+            color: $color-primary2;
+            text-transform: initial;
+        }
+    }
+
+    &__wrapper {
+        background-color: $color-grey5;
+    }
+}

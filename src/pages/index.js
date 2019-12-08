@@ -10,6 +10,7 @@ import CurrentLearning from "../components/currentlearning"
 import HeroSection from "../components/herosection"
 import Gallery from "../components/gallery"
 import ContactForm from "../components/contactform"
+import InfoSection from "../components/infosection"
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <HeroSection />
     <Gallery />
     <ContactForm />
+    <InfoSection />
   </Layout>
 )
 

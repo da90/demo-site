@@ -104,37 +104,6 @@
             margin-right: 10%;
           }
         }
-
-        & > span {
-          flex: 1;
-          display: flex;
-
-          @include responsive("phone") {
-            flex-basis: 100%;
-            margin-top: 2rem;
-          }
-
-          @include responsive("tablet") {
-            flex-basis: initial;
-            margin-top: 0;
-          }
-          & > input {
-            border-radius: 0;
-          }
-
-          & > i {
-            background-color: $color-grey5;
-            color: $color-grey1;
-            padding: 1.6rem;
-            font-size: 1.8rem;
-            transition: background-color 0.2s ease-in-out;
-
-            &:hover {
-              cursor: pointer;
-              background-color: $color-grey4;
-            }
-          }
-        }
       }
 
       & a:link {
