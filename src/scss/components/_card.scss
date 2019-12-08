@@ -34,9 +34,11 @@
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: white;
+    transition: color 0.2s ease-in-out;
 
     &:hover {
         cursor: pointer;
+        color: $color-primary5;
     }
   }
 

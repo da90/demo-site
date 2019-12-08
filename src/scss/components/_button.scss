@@ -18,5 +18,11 @@ button,
 
   &--primary {
     background-color: $color-primary6;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-primary5; 
+    }
   }
 }
