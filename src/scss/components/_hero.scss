@@ -34,6 +34,11 @@
 
         & > h1 {
             color: $color-primary1;
+            text-align: center;
+
+            @include responsive("phone") {
+                text-align: left;
+            }
         }
 
         & > a {
